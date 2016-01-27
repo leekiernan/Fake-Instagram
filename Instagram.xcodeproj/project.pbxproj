@@ -97,6 +97,9 @@
 		9B5F06281C57CE4A00B07ED5 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				9B5F06571C57D29000B07ED5 /* Controller */,
+				9B5F06581C57D29000B07ED5 /* Model */,
+				9B5F06591C57D29000B07ED5 /* View */,
 				9B5F06291C57CE4A00B07ED5 /* AppDelegate.swift */,
 				9B5F062B1C57CE4A00B07ED5 /* ViewController.swift */,
 				9B5F062D1C57CE4A00B07ED5 /* Main.storyboard */,
@@ -123,6 +126,27 @@
 				9B5F064B1C57CE4A00B07ED5 /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		9B5F06571C57D29000B07ED5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B5F06581C57D29000B07ED5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B5F06591C57D29000B07ED5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +217,7 @@
 				TargetAttributes = {
 					9B5F06251C57CE4A00B07ED5 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2Q6FJ956B3;
 					};
 					9B5F06391C57CE4A00B07ED5 = {
 						CreatedOnToolsVersion = 7.2;
@@ -397,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leekiernan.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leekiernan.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
