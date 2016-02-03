@@ -31,17 +31,6 @@ class FeedController: UITableViewController {
     return tableView.numberOfSections - cellIndex - 1
   }
 
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let post = Post.feed![ postIndex(indexPath.section) ]
-
-    let cell = tableView.dequeueReusableCellWithIdentifier("postCell") as! PostCell
-
-    cell.captionLabel.text = post.caption
-    cell.imgView.image = post.image
-    
-    return cell
-  }
-
   override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
     let post = Post.feed![postIndex(indexPath.section)]
     
@@ -52,4 +41,40 @@ class FeedController: UITableViewController {
     
     return 210
   }
+
+  override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    return 48
+  }
+
+  override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let post = Post.feed![ postIndex(section) ]
+    
+    let headerCell = tableView.dequeueReusableCellWithIdentifier("postHeaderCell") as? PostHeaderCell
+    
+    if post.creator == Profile.currentUser?.username {
+      headerCell!.profilePicture.image = Profile.currentUser?.picture
+    } else {
+      // creators image
+    }
+    
+    headerCell?.usernameButton.setTitle(post.creator, forState: .Normal)
+    
+    let headerView = UIView(frame: headerCell!.frame)
+    headerView.addSubview(headerCell!)
+    
+    return headerCell
+  }
+
+  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let post = Post.feed![ postIndex(indexPath.section) ]
+
+    let cell = tableView.dequeueReusableCellWithIdentifier("postCell") as! PostCell
+
+    cell.captionLabel.text = post.caption
+    cell.imgView.image = post.image
+    
+    
+    return cell
+  }
+  
 }
