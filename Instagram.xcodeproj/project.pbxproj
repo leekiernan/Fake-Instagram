@@ -18,6 +18,9 @@
 		9B5F06341C57CE4A00B07ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5F06321C57CE4A00B07ED5 /* LaunchScreen.storyboard */; };
 		9B5F063F1C57CE4A00B07ED5 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F063E1C57CE4A00B07ED5 /* InstagramTests.swift */; };
 		9B5F064A1C57CE4A00B07ED5 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F06491C57CE4A00B07ED5 /* InstagramUITests.swift */; };
+		9B7D9B911C5B9E9000CC35CA /* CentreTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D9B901C5B9E9000CC35CA /* CentreTabBarController.swift */; };
+		9B7D9B931C5BA24B00CC35CA /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D9B921C5BA24B00CC35CA /* CameraController.swift */; };
+		9B7D9B951C5BA5D700CC35CA /* CaptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7D9B941C5BA5D700CC35CA /* CaptionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		9B5F06451C57CE4A00B07ED5 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5F06491C57CE4A00B07ED5 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		9B5F064B1C57CE4A00B07ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7D9B901C5B9E9000CC35CA /* CentreTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentreTabBarController.swift; sourceTree = "<group>"; };
+		9B7D9B921C5BA24B00CC35CA /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		9B7D9B941C5BA5D700CC35CA /* CaptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,9 @@
 			children = (
 				9B4847951C59714900A450E2 /* ProfileController.swift */,
 				9B4847971C5976E900A450E2 /* FeedController.swift */,
+				9B7D9B901C5B9E9000CC35CA /* CentreTabBarController.swift */,
+				9B7D9B921C5BA24B00CC35CA /* CameraController.swift */,
+				9B7D9B941C5BA5D700CC35CA /* CaptionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,10 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4847961C59714900A450E2 /* ProfileController.swift in Sources */,
+				9B7D9B911C5B9E9000CC35CA /* CentreTabBarController.swift in Sources */,
 				9B4847981C5976E900A450E2 /* FeedController.swift in Sources */,
+				9B7D9B951C5BA5D700CC35CA /* CaptionController.swift in Sources */,
 				9B5F062C1C57CE4A00B07ED5 /* ViewController.swift in Sources */,
 				9B4847921C59507100A450E2 /* PostModel.swift in Sources */,
 				9B5F062A1C57CE4A00B07ED5 /* AppDelegate.swift in Sources */,
+				9B7D9B931C5BA24B00CC35CA /* CameraController.swift in Sources */,
 				9B4847941C5966B500A450E2 /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

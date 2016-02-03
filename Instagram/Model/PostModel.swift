@@ -30,3 +30,9 @@ class PostCell: UITableViewCell {
   @IBOutlet weak var captionLabel:UILabel!
   @IBOutlet weak var imgView:UIImageView!
 }
+
+
+class PostHeaderCell: UITableViewCell {
+  @IBOutlet weak var profilePicture:UIImageView!
+  @IBOutlet weak var usernameButton:UIButton!
+}
